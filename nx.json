@@ -12,9 +12,17 @@
   "npmScope": "base-apparel-coming-soon-page",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "NWE1NDU4MDItNjcxMy00ZDY1LThjZDktODBjYTM1OGUzOTdmfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -24,7 +32,9 @@
     },
     "base-apparel-coming-soon-page-e2e": {
       "tags": [],
-      "implicitDependencies": ["base-apparel-coming-soon-page"]
+      "implicitDependencies": [
+        "base-apparel-coming-soon-page"
+      ]
     }
   }
 }
