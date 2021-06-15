@@ -16,9 +16,6 @@ module.exports = {
         primary: 'hsl(0, 36%, 70%)'
       },
       extend: {
-        backgroundImage: {
-         image: "url('./apps/base-apparel-coming-soon-page/src/assets/img/bg-pattern-desktop.svg')",
-        }
       }
     },
 
