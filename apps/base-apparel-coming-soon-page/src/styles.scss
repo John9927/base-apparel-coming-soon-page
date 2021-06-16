@@ -5,3 +5,25 @@
 html {
   font-family: 'Josefin Sans', sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(
+    circle at top left,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(
+    circle at top left,
+    hsl(0, 66%, 80%),
+    hsl(0, 81%, 71%)
+  );
+}

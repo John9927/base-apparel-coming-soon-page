@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'base-apparel-coming-soon-page';
+
+  onClickSubmit() {
+    console.log("ciao")
+  }
 }
