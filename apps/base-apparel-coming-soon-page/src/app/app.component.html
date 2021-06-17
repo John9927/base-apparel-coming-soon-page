@@ -1,4 +1,4 @@
-<div class="flex flex-col w-full h-screen justify-between lg:flex-row">
+<div class="flex flex-col w-full h-screen justify-between md:flex-row">
   <div class="image w-3/5 h-screen overflow-y-auto ">
     <div class="flex flex-col w-3/5 mx-auto mt-16">
       <!-- Circle -->
@@ -18,10 +18,17 @@
       </div>
       <!-- Email -->
       <div class="container__email">
-        <input type="text" placeholder="Email Address" class="input" #email>
-        <div class="container__submit">
-          <div class="submit" (click)="onClickSubmit(email.value)">></div>
-        </div>
+        <form [formGroup]="form" (submit)="onClickSubmit()">
+          <input [ngClass]="{'input-error': form.controls.email.invalid && form.controls.email.touched}" type="text"
+            placeholder="Email Address" class="input" formControlName="email">
+          <span class="error__icons" *ngIf="form.controls.email.invalid && form.controls.email.touched"><i
+              class="fas fa-exclamation-circle"></i></span>
+          <span class="error" *ngIf="form.controls.email.invalid && form.controls.email.touched">Please provide a valid
+            mail</span>
+          <div class="container__submit">
+            <button type="submit" class="submit">></button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

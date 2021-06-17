@@ -52,8 +52,9 @@
               "apps/base-apparel-coming-soon-page/src/favicon.ico",
               "apps/base-apparel-coming-soon-page/src/assets"
             ],
-            "styles": ["apps/base-apparel-coming-soon-page/src/styles.scss"],
-            "scripts": []
+            "styles": ["apps/base-apparel-coming-soon-page/src/styles.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css" ],
+            "scripts": ["node_modules/@fortawesome/fontawesome-free/js/all.min.js"]
           },
           "configurations": {
             "production": {
